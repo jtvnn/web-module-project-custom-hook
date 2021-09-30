@@ -1,8 +1,8 @@
-import uselocalStorage from "./useLocationStorage"
+import useLocalStorage from "./useLocationStorage"
 
 
 export const useDarkMode = () => {
-    const [value, setValue] = uselocalStorage('darkmode', false);
+    const [value, setValue] = useLocalStorage('darkmode', false);
 
     return [value, setValue];
 }

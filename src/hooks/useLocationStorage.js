@@ -9,7 +9,7 @@ const useLocalStorage = (key, initialValue) => {
         window.localStorage.setItem(key, value)
         setStoredValue(value)
     }
-    return [storedValue];
+    return [storedValue, setValue];
 }
 
 export default useLocalStorage
